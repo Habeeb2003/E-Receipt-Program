@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Reciept2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="e-Receipt.css">
+</head>
+<body>
+    <main>
+        <section id="headerSect">
+            <div>
+                <h1>Tawaliu Stores E-Reciept</h1>
+            </div>
+        </section>
+        <section id="tableSect">
+            <div>
+                <table id="table">
+                    <tr>
+                        <th>
+                            S/N
+                        </th>
+                        <th>
+                            Item Name
+                        </th>
+                        <th>
+                            Price
+                        </th>
+                        <th>
+                            Quantity
+                        </th>
+                        <th>
+                            Total
+                        </th>
+                        <th>
+                            Actions
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6 class="mb-0">1</h6>
+                        </td>
+                        <td>
+                            <input list="Goods" name="goods" class="dis name">
+                                <datalist id="Goods">
+                                    <option value="Bread">
+                                    <option value="Doughnut">
+                                    <option value="Coke">
+                                    <option value="Bottle Water">
+                                    <option value="Meat Pie">
+                                </datalist>
+                        </td>
+                        <td>
+                            <input type="number" name="" class="dis price" id="itemPrice">
+                        </td>
+                        <td>
+                            <input type="number" name="" class="dis quantity" id="itemQuantity">
+                        </td>
+                        <td>
+                            <input type="number" name="" class="total" id="total">
+                        </td>
+                        <td>
+                            <button class="btn btn-primary edit">
+                                EDIT
+                            </button>
+                            <button class="btn btn-danger delete">
+                                DELETE
+                            </button>
+                        </td>
+                    </tr>              
+                </table>
+            </div>
+        </section>
+        <section id="footerSect" class="d-flex">
+            <div>
+                <input type="text" name="" id="overallTotal">
+            </div>
+            <div>
+                <button class="fa fa-plus btn btn-primary" id="Add"></button>
+                <button class="fa fa-minus btn btn-primary" id="Minus"></button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+<script src="e-Receipt.js"></script>
